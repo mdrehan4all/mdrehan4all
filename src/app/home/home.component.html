@@ -2,35 +2,82 @@
     <div class="row" style="margin:0px;padding:30px;">
         <div class="col-md-6 text-center">
             <img src="assets/mdrehan4all.jpg" style="width: 200px;border-radius: 100px;"/>
-            <h1>Hii, I am Md Rehan</h1>
+            <h1>Md Rehan</h1>
+            <p style="font-weight: 100;font-size: 14px;">Systems Engineer at TCS with total {{ experience }} of experience.</p>
+            <p style="font-weight: 100;font-size: 14px;"></p>
+            <div>
+                <p style="font-weight: 300;font-size: 16px;color:#aaaaaa;margin-bottom: 0px;">SUMMARY</p>
+                <p style="font-weight: 400;font-size: 13px;text-transform: uppercase;"> I am Full Stack Developer (more into frontend) with {{ experience }} of experience.
+                    <br/>Well versed with Angular, HTML, CSS, JavaScript, TypeScript, Node JS, React JS, REST API, Python, PHP, Java, C++, Spring Boot, Android (Java), MySQL, SQLite, MongoDB, Oracle, Firebase, IoT, Embedded systems Programming, Machine Learning, Deep Learning, NLP, Image Processing, and Generative AI (GenAI).
+                    <br/>I am very flexible and adaptive when it comes to learning new skills. I come with an open mind, high on energy, eager to learn fast and bring in fresh ideas.</p>
+            </div>
+
             <p>Find me on Google with keyword <a href="https://google.com/search?q=mdrehan4all" style="text-decoration:none;">mdrehan4all</a></p>
         </div>
         <div class="col-md-6 text-left">
-            <h2>About Me</h2>
-            <p style="font-size:16px;color:#aaaaaa;">Qualification</p>
-            <ul>
-                <li><strong>Masters in Computer Application</strong></li>
-                <li><strong>Bachelors in Computer Application</strong></li>
-            </ul>
-            <p style="font-size:16px;color:#aaaaaa;">Field of Study & Technologies</p>
-            <ul>
-                <li><strong>JavaScript</strong> (Node, Angular, Ajax, Jquery ...)</li>
-                <li><strong>TypeScript</strong></li>
-                <li><strong>Python</strong> (Flask, Django, OpenCV - Image Processing ...)</li>
-                <li><strong>Machine Learning</strong> (Scikit-learn, Tensorflow, Face Recognition, Voice Recognition ...)</li>
-                <li><strong>Java</strong></li>
-                <li><strong>PHP</strong></li>
-                <li><strong>Android</strong> (Java)</li>
-                <li><strong>HTML/CSS/SCSS</strong></li>
-                <li><strong>C/C++</strong></li>
-                <li><strong>Json/XML</strong></li>
-                <li><strong>Database</strong> (MySQL, SQLite, PostgreSQL, Firebase Realtime DB ...)</li>
-                <li><strong>IoT</strong></li>
-                <li><strong>Embedded System Programming</strong></li>
-                <li><strong>Cryptography</strong></li>
-                <li><strong>Blockchain</strong></li>
-                <li><strong>Electronics</strong></li>
-            </ul>
+            <h2>About</h2>
+
+            <mat-expansion-panel [expanded]="true">
+                <mat-expansion-panel-header>
+                <mat-panel-title>Contact</mat-panel-title>
+                </mat-expansion-panel-header>
+                <p class="m-0"><strong>Mobile</strong> <a mat-button href="tel:+918210614418">+918210614418</a></p>
+                <p class="m-0"><strong>WhatsApp</strong> <a mat-button href="https://wa.me/919576067762">+919576067762&nbsp;(WhatsApp)</a></p>
+                <p class="m-0"><strong>Email</strong> <a mat-button href="mailto:mdrehan4all@gmail.com">{{ 'mdrehan4all@gmail.com' }}</a></p>
+                <p class="m-0"><strong>Address</strong> <a mat-button href="#">Patna, Bihar</a></p>
+     
+            </mat-expansion-panel>
+            
+            <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                <mat-expansion-panel-header>
+                <mat-panel-title>Qualification</mat-panel-title>
+                <!---<mat-panel-description>
+                    {{panelOpenState ? 'open' : 'closed'}}
+                </mat-panel-description>--->
+                </mat-expansion-panel-header>
+                <p><strong>MASTERS IN COMPUTER APPLICATION</strong> <br/>Patna University [with 84%]</p>
+                <p><strong>BACHELORS IN COMPUTER APPLICATION</strong> <br/>Patna Science College, Patna [with 78%]</p>
+                
+            </mat-expansion-panel>
+
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                <mat-panel-title>Work Experience</mat-panel-title>
+                </mat-expansion-panel-header>
+                <p><strong>TATA CONSULTANCY SERVICES (TCS)</strong> <br/>June 2022 to Present</p>
+                <p><strong>HAPPIEST MINDS TECHNOLOGIES</strong> <br/>Sept 2021 to June 2022</p>
+                <p><strong>AZTECH TECHNOLOGY & ENGG. PVT. LTD.</strong> <br/>June 2019 to Sept 2021</p>
+            </mat-expansion-panel>
+
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                <mat-panel-title>Academic Projects</mat-panel-title>
+                </mat-expansion-panel-header>
+                
+                <p><strong>ATTENDANCE SYSTEM WITH FACE RECOGNITION</strong> <br/>IIT PATNA</p>
+                <p><strong>ANDROID APP FOR MCA DEPARTMENT</strong> <br/>PATNA UNIVERSITY</p>
+                <p><strong>PROJECT ON PAPER CIRCULATION SYSTEM</strong> <br/>HINDUSTAN MEDIA VENTURES LTD</p>
+                
+            </mat-expansion-panel>
+
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                <mat-panel-title>Certification & Awards</mat-panel-title>
+                </mat-expansion-panel-header>
+                <ul>
+                    <li><strong>TCS INNOVATION SPARK AWARD</strong></li>
+                    <li><strong>TCS SPECIAL INITIATIVE AWARD</strong></li>
+                    <li><strong>SHORT TERM COURSE FOR CRYPTOGRAPHY FROM NIT PATNA</strong></li>
+                </ul>
+            </mat-expansion-panel>
+
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                <mat-panel-title>Language & Technologies</mat-panel-title>
+                </mat-expansion-panel-header>
+                <button mat-raised-button style="border-radius: 19px;margin-left: 5px;margin-top:5px;" *ngFor="let d of technlang">{{ d }}</button>
+            </mat-expansion-panel>
+            
         </div>
     </div>
 </div>
