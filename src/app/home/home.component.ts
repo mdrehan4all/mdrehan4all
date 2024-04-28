@@ -40,4 +40,10 @@ export class HomeComponent implements OnInit{
     return { years: years, months: months };
   }
 
+  opened: number = -1;
+  open(x: number){
+    this.opened = x;
+    console.log(x);
+  }
+
 }
