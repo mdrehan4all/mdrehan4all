@@ -11,7 +11,7 @@ export class HomeComponent implements OnInit{
 
   experience: any;
 
-  technlang: any = ['Angular', 'ReactJS', 'JavaScript', 'TypeScript', 'HTML/CSS','BOOTSTRAP', 'Rest API', 'Postman','GIT', 'Python', 'PHP', 'Android (Java)', 'Java', 'MySQL', 'Oracle', 'SQLite', 'Firebase Realtime Databse', 'MonogoDB', 'Machine Learning', 'Deep Learning', 'Generative AI', 'NLP', 'Data Science', 'Embedded System Programming', 'C/C++']
+  technlang: any = ['Angular', 'ReactJS', 'JavaScript', 'TypeScript', 'HTML/CSS','BOOTSTRAP', 'Rest API', 'Postman','GIT', 'Python', 'PHP', 'Android (Java)', 'Java', 'MySQL', 'Oracle', 'SQLite', 'Firebase Realtime Databse', 'MongoDB', 'Machine Learning', 'Deep Learning', 'Generative AI', 'NLP', 'Data Science', 'Embedded System Programming', 'C/C++']
 
   constructor(){}
 
