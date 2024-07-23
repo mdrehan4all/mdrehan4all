@@ -1,1 +1,27 @@
-
+<header>
+    <div class="mcontainer shadow" style="position: fixed;top:0;left:0;right:0;">
+            <div class="ms-3"><b style="color:#000;font-size: 18px;">&lt;&nbsp;Md Rehan&nbsp;/&gt;</b></div>
+            <div>
+                
+            </div>
+            <div class="me-3">
+                <button mat-icon-button [matMenuTriggerFor]="menu">
+                    <mat-icon>more_vert</mat-icon>
+                  </button>
+                  <mat-menu #menu="matMenu">
+                    <a href="#about" mat-menu-item>
+                      <mat-icon>info</mat-icon>
+                      <span>About</span>
+                    </a>
+                    <a href="#about" mat-menu-item>
+                      <mat-icon>phone</mat-icon>
+                      <span>Contact</span>
+                    </a>
+                    <a mat-menu-item>
+                      <mat-icon>message</mat-icon>
+                      <span>Projects</span>
+                    </a>
+                  </mat-menu>
+            </div>
+    </div>
+</header>

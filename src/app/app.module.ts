@@ -14,6 +14,7 @@ import { NotfoundComponent } from './notfound/notfound.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatIconModule } from '@angular/material/icon';
+import { MatMenuModule } from '@angular/material/menu';
 import { MatExpansionModule } from '@angular/material/expansion';
 
 @NgModule({
@@ -32,6 +33,7 @@ import { MatExpansionModule } from '@angular/material/expansion';
     MatButtonModule,
     MatTabsModule,
     MatIconModule,
+    MatMenuModule,
     MatExpansionModule
   ],
   providers: [
