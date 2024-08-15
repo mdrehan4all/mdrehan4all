@@ -13,3 +13,9 @@
 # Projects Demo
 [LLM Chat](https://llm-chat.pages.dev)  
 [Android Apps](https://play.google.com/store/search?q=pub%3ARnet%20Softwares&c=apps)
+
+## NPM Packages
+[https://www.npmjs.com/package/lite-tts](https://www.npmjs.com/package/lite-tts)
+
+## PyPI Packages
+[https://pypi.org/project/litetts/](https://pypi.org/project/litetts/)
