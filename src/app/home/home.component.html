@@ -7,8 +7,8 @@
             <p style="font-weight: 100;font-size: 14px;"></p>
             <div class="text-start">
                 <p style="font-weight: 300;font-size: 16px;color:#aaaaaa;margin-bottom: 0px;">SUMMARY</p>
-                <p>I am Full Stack Developer also I am AI/ML Engineer with {{ experience }} of experience.</p>
-                <p>Well versed with Angular, HTML, CSS, JavaScript, TypeScript, Node JS, React JS, REST API, Python, PHP (core), Java (core), C++, Spring Boot, Android (Java), MySQL, SQLite, MongoDB, Oracle, Firebase, IoT, Embedded systems Programming, Machine Learning, Deep Learning, NLP, Image Processing, and Generative AI (GenAI).
+                <p>I am Full Stack Developer + GenAI/AI/ML Engineer with {{ experience }} of experience.</p>
+                <p>Well versed with Angular, HTML, CSS, JavaScript, TypeScript, Node JS, React JS, REST API, Python, PHP, Java, C/C++, Spring Boot, Android (Java), MySQL, SQLite, MongoDB, Oracle, Firebase, IoT, Embedded Systems Programming, Machine Learning, Deep Learning, NLP, Image Processing, and Generative AI (GenAI).
                 </p><p>I am very flexible and adaptive when it comes to learning new skills. I come with an open mind, high on energy, eager to learn fast and bring in fresh ideas.</p>
             </div>
 
@@ -30,7 +30,7 @@
             </mat-expansion-panel>
             -->
 
-            <mat-expansion-panel (opened)="open(1)" (closed)="open(-1)">
+            <mat-expansion-panel class="mt-3" (opened)="open(1)" (closed)="open(-1)">
                 <mat-expansion-panel-header>
                 <mat-panel-title>Language & Technologies</mat-panel-title>
                 </mat-expansion-panel-header>
@@ -44,8 +44,8 @@
                     {{panelOpenState ? 'open' : 'closed'}}
                 </mat-panel-description>--->
                 </mat-expansion-panel-header>
-                <p><strong>MASTERS IN COMPUTER APPLICATION</strong> <br/>Patna University [with 84%]</p>
-                <p><strong>BACHELORS IN COMPUTER APPLICATION</strong> <br/>Patna Science College, Patna [with 78%]</p>
+                <p><strong ngbTooltip="84%">MASTERS IN COMPUTER APPLICATION</strong> <br/>Patna University</p>
+                <p><strong ngbTooltip="78%">BACHELORS IN COMPUTER APPLICATION</strong> <br/>Patna Science College, Patna</p>
                 
             </mat-expansion-panel>
 

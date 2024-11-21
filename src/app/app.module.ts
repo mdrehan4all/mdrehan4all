@@ -16,6 +16,7 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { MatExpansionModule } from '@angular/material/expansion';
     ContactComponent,
     HeaderComponent,
     FooterComponent,
-    NotfoundComponent
+    NotfoundComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
